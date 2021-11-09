@@ -52,7 +52,7 @@ console.log("People now:", ...people);
 const peopleToDelete = ["Mary", "Matt"];
 const deletePeopleByName = (people, peopleToDelete) => {
   peopleToDelete.forEach(personToDelete => {
-    personToDelete.splice(person, 1);
+    people.splice(personToDelete, 1);
   });
   return people;
 };
@@ -67,15 +67,21 @@ const fooIndex = people.indexOf("Foo");
 console.log("Foo Index:", fooIndex);
 
 // 10
+// Method 01
+// people = ["Greg", "Mary", "Devon", "James"];
+// const devonIndex = people.indexOf("Devon");
+// people.splice(devonIndex, 1);
+// people = [
+//   ...people.slice(0, devonIndex),
+//   "Elizabeth",
+//   "Artie",
+//   ...people.slice(devonIndex),
+// ];
+// console.log("People with Elizabeth and Artie:", people);
+
+// Method 02
 people = ["Greg", "Mary", "Devon", "James"];
-const devonIndex = people.indexOf("Devon");
-people.splice(devonIndex, 1);
-people = [
-  ...people.slice(0, devonIndex),
-  "Elizabeth",
-  "Artie",
-  ...people.slice(devonIndex),
-];
+people.splice(2, 1, 'Elizabeth', 'Artie');
 console.log("People with Elizabeth and Artie:", people);
 
 // 11
