@@ -1,1 +1,0 @@
-deletePeople[0]),
