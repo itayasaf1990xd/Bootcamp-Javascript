@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+  <header>
+    <h3>Verification Code (Text to Copy):</h3>
+    <h2 data-code="102030">102030</h2>
+  </header>
+  <main>
+    <div class="digits-wrapper">
+      <div class="digits-container">
+        <input data-digit="1" class="digit" type="text" min="1" max="9" minlength="1" maxlength="1" autofocus />
+        <input data-digit="2" class="digit" type="text" min="1" max="9" minlength="1" maxlength="1" />
+        <input data-digit="3" class="digit" type="text" min="1" max="9" minlength="1" maxlength="1" />
+        <input data-digit="4" class="digit" type="text" min="1" max="9" minlength="1" maxlength="1" />
+        <input data-digit="5" class="digit" type="text" min="1" max="9" minlength="1" maxlength="1" />
+        <input data-digit="6" class="digit" type="text" min="1" max="9" minlength="1" maxlength="1" />
+      </div>
+      <button class="button digits-button" type="button">Verify</button>
+      <button class="button reset-button" type="button">Reset</button>
+
+    </div>
+    <h2 class="verify-Message"></h2>
+  </main>
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>

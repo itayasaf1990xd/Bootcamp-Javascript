@@ -1,0 +1,41 @@
+body {
+  font: 1rem 'Times New Roman', Times, serif;
+}
+
+header,
+main {
+  text-align: center;
+}
+
+.digits-wrapper {
+  text-align: center;
+  border: 2px dashed #333333;
+  border-radius: 5px;
+  width: max-content;
+  margin: auto;
+  padding: 25px;
+}
+
+.digits-container {
+  margin-bottom: 15px;
+}
+
+.digit {
+  width: 20px;
+}
+
+.button {
+  margin: 10px 0 0 0;
+  height: 25px;
+  width: 75%;
+  color: #333333;
+  background: #fefefe;
+  border: 2px solid #333333;
+  border-radius: 50px;
+}
+
+.button:hover {
+  color: #222222;
+  background: #efefef;
+  border: 2px solid #222222;
+}
