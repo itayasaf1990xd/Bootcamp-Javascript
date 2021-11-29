@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.off {
+  background-image: url('/assets/images/off.jpeg');
+  background-color: #333333;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 222px;
+  height: 227px;
+}
+
+.on {
+  background-image: url('/assets/images/on.jpeg');
+  background-color: #eeeeee;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 222px;
+  height: 227px;
+}
