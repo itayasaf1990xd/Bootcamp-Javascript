@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px 'Roboto', sans-serif;
+  background: #efefef;
+}
+
+.racer_table {
+  margin: auto;
+}
+
+td {
+  height: 40px;
+  width: 50px;
+  border: 1px solid whitesmoke;
+}
+
+td.active {
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+}
+
+#player1-race>td.active {
+  background-image: url(images/player_1.png);
+}
+
+#player2-race td.active {
+  background-image: url(images/player_2.png);
+}
+
+td:last-child {
+  background-image: url(images/finish.png);
+  background-size: cover;
+}
+
+td:last-child.active {
+  background-size: 90%, cover;
+  background-position: center, top left;
+}
+
+#player1-race td:last-child.active {
+  background-image: url(images/player_1.png), url("images/finish.png");
+}
+
+#player2-race td:last-child.active {
+  background-image: url(images/player_2.png), url("images/finish.png");
+}

@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px 'Roboto', sans-serif;
+  background: #efefef;
+}
+
+.blue {
+  color: #4682b4;
+}
+
+h1 {
+  font-size: 5.00rem;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: 2.50rem;
+  width: 100%;
+  text-align: left;
+  font-weight: 500;
+}
+
+h3 {
+  position: relative;
+  font-size: 1.75rem;
+  width: fit-content;
+  font-weight: 500;
+}
+
+h3::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -10.0px;
+  width: 150px;
+  left: 7.50%;
+  border-bottom: 5px solid #4682b4;
+  border-radius: 50px;
+}
+
+h4 {
+  font-size: 1.50rem;
+  width: 100%;
+  font-weight: 500;
+}
+
+.header-container {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 75px auto 25px auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.letter-wrapper {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4682b4;
+  border: 5px solid #72afe7;
+  border-radius: 50%;
+  padding: 15px 15px 15px 15px;
+  margin: 30px 0 15px 0;
+}
+
+.letter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fefefe;
+}
+
+.feedback {
+  font-weight: 400;
+  color: #333333;
+}
+
+.feedback-letter {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.feedback-valid {
+  color: #089453;
+}
+
+.feedback-invalid {
+  color: #91253c;
+}
+
+.guesses-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0 0 0;
+}
+
+.guesses-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0 0 0;
+  padding: 25px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  color: #fefefe;
+  background: #555555;
+  border-radius: 5px;
+  margin: 10px 5px 0 5px;
+  padding: 5px 10px 5px 10px;
+  text-transform: uppercase;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  color: #fefefe;
+  background: #4682b4;
+  border-radius: 50px;
+  padding: 7.5px;
+  margin: 15px 0 0 0;
+  width: 135px;
+  transition: 0.5s all ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: #3C709A;
+}
