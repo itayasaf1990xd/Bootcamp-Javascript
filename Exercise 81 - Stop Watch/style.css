@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font: 10px 'Roboto', sans-serif;
+  background: #efefef;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.watch {
+  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr max-content) 1fr;
+  text-align: center;
+  font-size: 5rem;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.watch .colon {
+  color: #01328dc4;
+  padding: 10px 5px 10px 5px;
+}
+
+.minutes,
+.seconds,
+.milliseconds {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  line-height: 85px;
+  color: #fefefe;
+  border: 3px solid #023aa19c;
+  border-radius: 50%;
+  background: #115deb9c;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.buttons-container {
+  display: grid;
+  width: 300px;
+  grid-template-columns: repeat(2, max-content);
+  text-align: center;
+  justify-content: space-between;
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+#start-button,
+#stop-button {
+  width: 135px;
+  padding: 5px;
+  border-radius: 50px;
+  font-weight: 700;
+  color: #fefefe;
+}
+
+#start-button {
+  background-color: #0080006c;
+  border: 1px solid #008000;
+  transition: 0.4s ease-in-out all;
+}
+
+#start-button:hover {
+  background-color: #008000;
+  color: white;
+  cursor: pointer;
+}
+
+#stop-button {
+  background-color: #74162c6c;
+  border: 1px solid #74162c;
+  transition: 0.4s ease-in-out all;
+}
+
+#stop-button:hover {
+  background-color: #74162c;
+  color: white;
+  cursor: pointer;
+}
