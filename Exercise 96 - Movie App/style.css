@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', 'Raleway', sans-serif;
+  font-size: 10px;
+  background: url("./background.jpg") center center/cover no-repeat fixed;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20vh 1fr;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.movie-search-wrapper,
+button {
+  width: 50vw;
+  min-width: 400px;
+}
+
+button:hover {
+  background: #efefef;
+  cursor: pointer;
+}
+
+.movie-search-wrapper {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  appearance: textfield;
+  background-color: #ffffff;
+  border-width: 2px;
+  border-style: outset;
+  border-color: #767676;
+  overflow: hidden;
+}
+
+input,
+label {
+  background: unset;
+  border: unset;
+}
+
+input,
+button,
+label {
+  font-size: 25px;
+  padding: 6px;
+}
+
+input {
+  width: 100%;
+  background: none;
+}
+
+:focus {
+  outline: #575757a1 auto 1px;
+}
+
+.movie-card {
+  align-self: flex-start;
+  border: #323232;
+  border-radius: 5px;
+  background: #efefef;
+  width: 400px;
+  overflow: hidden;
+  display: block;
+  margin: 10px auto;
+}
+
+.card-link {
+  color: unset;
+  text-decoration: unset;
+}
+
+.information-container {
+  padding: 15px;
+}
+
+.img-container {
+  text-align: center;
+}
+
+.poster {
+  width: 100%;
+}
+
+a {
+  color: #0e73ad;
+  font-weight: 700;
+}
+
+h1 {
+  height: 75px;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  font-size: 40px;
+}
+
+.information-container {
+  background: #efefefda;
+  height: max-content;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.errorMessage {
+  color: #ec3452;
+  font-size: 1.5rem;
+}
+
+span.title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  opacity: 1.00;
+}
+
+div h1 ~ div {
+  font-size: 1rem;
+  color: #ec3452;
+}
+
+.rating-img {
+  height: 25px;
+}
+
+.rating-box {
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  width: calc(570px / 3);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 15px 0 5px 0;
+
+}
+
+.rating-box>div {
+  font-size: 19px;
+}
+
+.rating-wrapper {
+  display: flex;
+}
